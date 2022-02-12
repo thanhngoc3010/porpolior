@@ -1,0 +1,48 @@
+ 
+
+
+    a{color: black;}
+    h1{font-size: 64px;
+ 
+</style>
+<style>
+    .top-menu {
+    background-color: black;
+    text-align: right;
+ }
+   .top-menu a{
+       color: white;     
+    }
+    }
+    </style>
+    <style>
+    .gray {
+    color: #828282;
+  }
+  .red{
+      color: red;
+    }
+  .hinhcogai{
+      text-align:center;
+    }
+    .contract a{
+        text-decoration: none;
+    }
+    .uppercase {
+        text-transform: uppercase;
+    }
+    @font-face {
+      font-family:SVNGilroyMedium ;
+      src:url(../fonts/SVN-Gilroy-Medium.otf); 
+  }
+  @font-face {
+    font-family:SVNGilroyMedium ;
+    src:url(../fonts/SVN-Gilroy-Bold.otf); 
+    font-weight:bold;
+}
+*{
+    font-family:SVNGilroyMedium, Helvetica, sans-serif;
+}
+body {
+  font-size: 100%;
+}

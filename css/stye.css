@@ -1,0 +1,26 @@
+<style >
+.breadcrumb a::before {
+    content: url(img/muitenxam.svg);
+}
+.breadcrumb a:first-child::before { 
+   
+    content: none;
+}
+.grey-list li::marker{
+    color: #828282;
+}
+.red-list li::marker{
+    color: red;
+}
+::selection{
+    color:red;
+    background:black;
+}
+@font-face {
+    font-family:SVNGilroyMedium ;
+    src:url(../fonts/SVN-Gilroy-Medium.otf) 
+}
+*{
+    font-family:SVNGilroyMedium  ;
+}
+</style>

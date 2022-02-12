@@ -6,43 +6,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   <style>
+       .link-btn::after {
+       content: url(img/link-btn-arrow.svg);
+    }
+    .system::before{
+        content: url(img/dautich.svg);
+        vertical-align: middle;
+    }
+     .main-btn {
+        background-color:black;
+        color: white;}
+   </style>
 </head>
-<h1>Login</h1>
+
 
 <body>
+    <Header>
+        
+        <h2>NORDIC CODER</h1>
+        <nav>
+            <a href="new">New</a>
+            <a href="shop">Shop</a>
+            <a href="sale">Sale</a>
+            <a href="login.html">Login</a>
+            <a href="#" class="cart">
+                <img src="img/art.svg" alt="cart">
+                <p>No item yet</p>
+    </header>
+    <h1>Login</h1>
+    <a href="register.html" class="link-btn">Create account</a>
+   
     <form>
-
+        <input type="email" name="email" placeholder="Email address"> <br>
+        <input type="password" name="pwd" placeholder="Password"> <br>
+            <input type="checkbox" id="Rmb" name="Remember" 
+            value="Remember me">
+            <label for="rmb">Remember me</label> <br>
       
-        <input type="text" name="name">
-        <input type="Submit" value="Send"><br>
-        <input type="checkbox" id="Rmb" name="Remember" 
-        value="Remember me">
-        <label for="rmb">Remember me</label>
-
-        <br>
-       <input type="submit" value="Send">
-
+    
+        <a href="#" >Lost password</a> <br>
+        <input type="submit" value="Login" class="main-btn">
     </form>
-    <form>
-        <input type="email" name="email">
-        <input type="Submit" value="Login">
-        <input tpye="number" name="quantily" min="1" max="5">
-    </form>
-
-    <form>
-        <select name="cars" id="cars">
-            <option value="volvo">volvo</option>
-            <option value="saab">saab</option>
-            <option value="fiat">fiat</option>
-            <option value="audio">audio</option>
-            input
-
-        </select>
-    </form>
-    <form>
-        <textarea name="message" rows="10"></textarea>
-    </form>
-    <button type="button" onclick="alert" ((add)>type</button>
+    
+    <footer>
+    <div class="footer">
+        <p> About us </p>
+        <ul>
+        <li>Our company</li>  
+        <li> Our history</li> 
+          <li>Contact </li>  
+           <li>Jobs</li> 
+           <li>Journal</li> 
+           <li>Store Locations</li>
+        </ul>
+        <p>How can We help</p>
+          <li>FAQs</li>
+           <li> Order tracking</li>
+           <li> Terms & Conditions</li>
+           <li>  Privacy Policy</li>
+           <li>  Returns & Refunds</li>
+           <li> Support </li>
+           <p>Shop</p>
+           <li>  Tops </li>
+           <li>   Accessories</li>
+           <li>Jeans </li>
+           <li>  Jackets </li>
+           <li> Shoes</li>
+           <p>Security system</p>
+          
+           <p class="system">   PCI security standards</p>
+           <p class="system">    Protect card owner</p>
+           <p class="system">    Encrypted network</p>
+        
+          
+            <p> Copyright &copy; 2020 Your Name. All rights reserved. </p>
+        </div>
+        </footer>
+    
 </body>
 
 </html>

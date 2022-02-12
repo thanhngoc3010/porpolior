@@ -5,17 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .top-menu {
+        background-color: black;
+        text-align: right;
+     }
+       .top-menu a{
+           color: white;     
+        }
+      .black-btn {
+        background-color: #000000;
+        color: aliceblue;
+        }
+        .black-btn:hover {
+        background-color: grey;
+           }
+        .contact-info p:first-child{
+          font-size: 24px;
+        }
+        .contact-info p:nth-child(2) {
+          color: #828282;
+        }
+        .system li::before{
+      content: url(img/dautich.svg);
+    } 
+    </style>
 </head>
 
 <body>
+<nav class="top-menu">
+  <a href="contract.html" class="contract">Contract</a>
+  <img src="img/f.svg" alt="facebook">
+  <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <img src="img/in.svg" alt="in">
+  <a href="https://linkedin.com/" ><i class="fab fa-linkedin-in"></i></a> 
+  <img src="img/github.svg" alt="github">
+  <a href="#"><i class="fab fa-github-square"></i></a>
+  <a href="#">Share</a>
+</nav>
+<div class="hinhcogai">
+  <img src="img/hinhdaidien.png" alt="hinhdaidien">
+  <p><b>My Name</b</p> <br>
+  <a href="mailto:Myemail@gmail.com">Myemail@gmail.com</a><img src="img/hinhsaumail.svg">
+</div>
+<a href="index.html"><img src="img/hinhvali.svg"> My Porfolio</a>
+<a href="aboutme.html"><img src="img/hinhaboume.svg">About me</a>
   
-  <a href=/http://www.facebook.com/>f</a> 
+  </div>
+  <br>
+  <img src="img/desktop.jpg" alt="desktop" >
     <h1>Contact</h1> 
     <form>
-      <input type="Name" name="name" placeholder="Name" >
-      <input type="email" name="email" placeholder="Email" >
-      <input type="submit" value="Send">
-      <input type="text" name="frame"><br>
+      <input type="Name" name="name" placeholder="Name" > <br>
+      <input type="email" name="email" placeholder="Email" > <br>
+      <input  type="submit" value="Send"  class="black-btn">
+    <br>
       <input type="radio" id="html" name="fav_language" 
       value="HTML">
       <label for="html">HTML</label><br>
@@ -26,8 +70,16 @@
       value="JavaSript">
       <label for="javascrip">JavaSript</label>
       <br>
-      <textarea name="message" id="" cols="30" rows="10"></textarea>
+      <textarea name="message" id="" placeholder="How can I help?"  cols="30" rows="10"></textarea>
     </form>
-   
+    <picture>
+      <source media="min-width:650px)" srcset="img/tablet.png">
+      <source media="min-width:465px)" srcset="img/destop.png">
+    </picture>
+    <img src="img/mobile.jpg" alt="mobile"> <br>
+    <img src="img/tablet.jpg" alt="tablet">
+    <footer>
+      <p> Copyright &copy; 2020 Your Name. All rights reserved. </p>
+  </footer>
 </body>
 </html>

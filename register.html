@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .link-btn::after {
+       content: url(img/link-btn-arrow.svg);
+    }
+        p{
+            line-height: 190%;
+        }
+        .system li::before{
+      content: url(img/dautich.svg);
+    } 
+    .main-btn {
+        background-color:black;
+        color: white;}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="new">New</a>
+        <a href="shop">Shop</a>
+        <a href="sale">Sale</a>
+        <a href="login.html">Login</a>
+        <a href="#" class="cart">
+            <img src="img/art.svg" alt="cart">
+            <p>No item yet</p>
+        </a>
+      </nav>
+        <h1>Create account</h1>
+    <a href="login.html" class="link-btn">Login</a>
+    <form>
+      <input type="email" name="email" placeholder="Email address"> <br>
+      <input type="password" name="pwd" placeholder="Password"> <br>
+    </form>
+    <p>Your personal data will be used to support your experience <br>
+         throughout this website, to manage access to your account,<br>
+          and for other purposes described in our privacy policy.</p>
+     <form >
+          <input type="submit" value="Register" class="main-btn">
+          <div class="footer">
+     </form>
+     <footer>
+            <p> About us </p>
+            <ul>
+            <li>Our company</li>  
+            <li> Our history</li> 
+              <li>Contact </li>  
+               <li>Jobs</li> 
+               <li>Journal</li> 
+               <li>Store Locations</li>
+            </ul>
+            <p>How can We help</p>
+              <li>FAQs</li>
+               <li> Order tracking</li>
+               <li> Terms & Conditions</li>
+               <li>  Privacy Policy</li>
+               <li>  Returns & Refunds</li>
+               <li> Support </li>
+               <p>Shop</p>
+               <li>  Tops </li>
+               <li>   Accessories</li>
+               <li>Jeans </li>
+               <li>  Jackets </li>
+               <li> Shoes</li>
+               <p>Security system</p>
+               <ul class="system">
+               <li>   PCI security standards</li>
+                <li>    Protect card owner</li>
+                <li>    Security system</li>
+                <li>    Encrypted network</li>
+              </ul>
+              <p> Copyright &copy; 2020 Your Name. All rights reserved. </p>
+          </footer>  
+</body>
+</html>

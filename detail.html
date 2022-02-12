@@ -5,11 +5,161 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/stye.css">
+    <style>
+    .breadcrumb a::before {
+        content: url(img/muitenxam.svg);
+    }
+    .breadcrumb a:first-child::before { 
+       
+        content: none;
+    }
+    .grey-list li::marker{
+        color: #828282;
+    }
+    .red-list li::marker{
+        color: red;
+    }
+    ::selection{
+        color:red;
+        background:black;
+    }
+    .add-relate {
+        background-color: #FFFFFF;
+    }
+    .add-relate::after{
+        content: url(img/muitendenrelate.svg);
+    }
+    .system li::before{
+      content: url(img/dautich.svg);
+    } 
+    
+   </style>
+
 </head>
 <body>
-   <form > 
-       <input type="search" name="gsearch">
-   </form> 
+    <header>
+        <img src="img/detail.png" alt="detail">
+       <img src="img/detail2.png" alt="detail2">
+       <img src="img/detail3.png" alt="detail3">
+       <img src="img/detail4.jpg" alt="detail4">
+       <img src="img/detail5.jpg" alt="detail5">
+       <img src="img/detail6.jpg" alt="detail6">
+    </header>
+    <nav>
+        <a href="new">New</a>
+        <a href="shop">Shop</a>
+        <a href="sale">Sale</a>
+        <a href="login.html">Login</a>
+        <a href="#" class="cart">
+            <img src="img/art.svg" alt="cart">
+        </a>
+     </nav>
+     <img src="img/detail.png" alt="detail">
+     <img src="img/detail2.png" alt="detail2">
+     <img src="img/detail3.png" alt="detail3">
+     <img src="img/detail7.png" alt="detail7">
+     <img src="img/detail8.jpg" alt="detail8">
+    <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <a href="#">Jackets</a>
+        <a href="#">Julia</a>
+    </div>
+    <h1>Julia</h1>
+    <p>$249.00</p>
+    <p>Color</p>
+    <img src="img/tronden.svg" alt="tronden">
+    <img src="img/tronxam.svg" alt="tronxam">
+    <img src="img/trondo.svg" alt="trondo">
+    <p>Size</p>
+    <button type="button">XS</button>
+    <button type="button">S</button>
+    <button type="button">M</button>
+    <button type="button">L</button> <br>
+    <button type="button" onclick= "alert('add to card')">add to cart </button> 
+    <img src="img/muitentronden.svg" alt="muitentronden"> <br>
+    <img src="img/tim.svg" alt="tim">
+    <p>SKU:86423-AB</p>
+    <p>Category: Jacket</p>
+    <div>
+        <a href="#">Share</a>
+        <a href="https://vi-vn.facebook.com/" class="fb">
+            <img src="img/faebook.svg" alt="cart">
+        </a>
+        <a href="https://twitter.com/" class="twitter">
+            <img src="img/twitter.svg" alt="twitter">
+        </a>
+        <a href="https://google.com/" class="google">
+            <img src="img/google+.svg" alt="google+">
+        </a>
+        <a href="https://www.pinterest.com/" class="pinterest">
+            <img src="img/pinterest.svg" alt="pinterest">
+        </a>
+    </div>
+   <p>Description</p>
+   <p>Additional information</p>
+   <p>Reviews (1)</p>
+   <p>CONTENT & CARE</p>
+            <ul class="grey-list">
+                <li>Nylon, Metallic, Spandex</li>
+                <li> Imported </li>
+                <li> Dry Flat</li>
+            </ul>
+     <p>DETAILS & FIT</p>  
+     <ul class="red-list">
+         <li>Length: 32"</li>
+         <li> Measured in size Small</li>
+     </ul>
+    <p>Red modeled on size Small. <br>
+        Model’s profile: height 5'7", bust 32", waist 25”</p>   
+        <p>Related Products</p> 
+        <img src="img/related1.jpg" alt="related1">
+        <button type="button" onclick= "alert('add to card')" class="add-relate">add to cart </button>
+       <p>Elly</p>
+       <p>€99.00 €119.00</p>
+        <img src="img/related2.png" alt="related2">
+        <p>Julia</p>
+       <p>€99.00 €119.00</p>
+        <img src="img/related3.jpg" alt="related3">
+        <p>Julia</p>
+        <p>€99.00 €119.00</p>
+        <img src="img/related14.jpg" alt="related4">
+        <p>Julia</p>
+        <p>€99.00 €119.00</p>
+        <div class="footer">
+            <p> About us </p>
+            <ul>
+            <li>Our company</li>  
+            <li> Our history</li> 
+              <li>Contact </li>  
+               <li>Jobs</li> 
+               <li>Journal</li> 
+               <li>Store Locations</li>
+            </ul>
+            <p>How can We help</p>
+              <li>FAQs</li>
+               <li> Order tracking</li>
+               <li> Terms & Conditions</li>
+               <li>  Privacy Policy</li>
+               <li>  Returns & Refunds</li>
+               <li> Support </li>
+               <p>Shop</p>
+               <li>  Tops </li>
+               <li>   Accessories</li>
+               <li>Jeans </li>
+               <li>  Jackets </li>
+               <li> Shoes</li>
+               <p>Security system</p>
+               <ul class="system">
+               <li>   PCI security standards</li>
+                <li>    Protect card owner</li>
+                <li>    Security system</li>
+                <li>    Encrypted network</li>
+              </ul>
+            </p>
+        </div>   
+        <footer>
+            <p> Copyright &copy; 2020 Your Name. All rights reserved. </p>
+        </footer> 
 </body>
 </html>
-<input type="number" name="quanlity" min="1" max ="5"> 
