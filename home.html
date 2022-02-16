@@ -7,8 +7,9 @@
     <title>Document</title>
 <style>
     .cookie{
-        background-color: black;
+         background-color: rgba(0, 0, 0, 0.8);
         color: white;
+        width: 390px;
     }
 </style>
 <style>
@@ -38,6 +39,9 @@
        content:url(img/muitentronden.svg);
        vertical-align: middle;
     }
+    .arrow-link:hover {
+        opacity: 0.5;
+    }
     h1{
         text-align: right;
     }
@@ -65,55 +69,133 @@
     .system li::before{
       content: url(img/dautich.svg);
     } 
+    .new-customer{
+        width: 800px;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.8);
+    }
+   .new-customer-section {
+       background-image: url(../img/newcustomer.jpg);
+    background-position: center;
+}
+    .home-banner {
+        width: 2055.91px;
+         height: 780px;
+        background-image:url(../img/hinhcogaihome1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .float-right {
+        float: right;
+    }
+    .float-left {
+        float:left ;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .Naturalism {
+        width: 510px;
+        height: 250px;
+        color: #FFFFFF;
+        background-image:url(../img/Naturalism.jpg);
+    }
+    .justify-content-center {
+        display:flex ;
+       justify-content: center;
+    }
+    .flex-container {
+        display: flex;
+   justify-content: center;
+} 
+   .darling {
+    width: 180px;
+    height: 250px;
+    background-image: url(../img/Darling.jpg);
+}
+.Lefeminin {
+    width: 270px;
+   height: 250px;
+   background-image: url(../img/Lefeminin.jpg);
+}
+.justify-content-end {
+    justify-content: end;
+}
+.Reven {
+    width: 180px;
+   height: 250px;
+   color: #FFFFFF;
+   background-image: url(../img/Reven.jpg);
+  }
+  .Mystery {
+    width: 510px;
+   height: 250px;
+   color: #FFFFFF;
+   background-image: url(../img/Mystery.jpg);
+  }
+  .justify-content-between {
+      justify-content: space-between;
+  }
+
   </style>
 </head>
 
 
 <body>
-    <Header>
-        <img src="img/hinhcogaihome1.jpg" alt="hinhcogaihome1">
+    <Header class="home-banner " >
+      <nav class="flex-container container justify-content-between">
+        <a href="index.html" class="uppercase">Nordic Coder</a>
         
-        <h2>NORDIC CODER</h1>
-        <h1 class="uppercase">reven</h1>
-        <nav>
+       <div>
             <a href="new">New</a>
             <a href="shop">Shop</a>
             <a href="sale">Sale</a>
             <a href="login.html">Login</a>
             <a href="#" class="cart">
+                <!--dung svg cho hinh vector net va nhe-->
                 <img src="img/art.svg" alt="cart">
                 <p>No item yet</p>
             </a>
-         </nav>
+         </div>
+       </nav>
+            <h1 class="uppercase banner-tile">reven</h1>
+        </div>>
          <img src="img/muitendentrai.svg" alt="muitendentrai">
          <img src="img/muitendenphai.svg" alt="muitendenphai">
             <a href="new.html" class="arrow-link" >Shop Now</a>
-      
+       
     </Header>
    
     <main>
-        <img src="img/hinhcogaihome2.jpg" alt="hinhcogaihome2">
-        <p>Find your new look with the fresh fall fashion ideas.</p>
-        <p>Amazing designs & collaborations, and as always <br> 100% Organic & Fairtrade certified cotton. Inspired <br>
-             by the georgious Brasilian bucket, a wonderful <br>
-              serenity has taken possession of my entire soul, like <br>
+        <p class="clearfix"><img src="img/hinhcogaihome2.jpg" alt="hinhcogaihome2" class="float-left">Find your new look with the fresh fall fashion ideas.</p>
+        <p class="clearfix"><img src="img/hinhcogaihome3.jpg" alt="hinhcogaihome3" class="float-right">Amaging designs & collaborations, and as always 100% Organic & Fairtrade certified cotton. Inspired <br>
+             by the georgious Brasilian bucket, a wonderful
+              serenity has taken possession of my entire soul, like 
                these sweet mornings of spring which.</p>
               
-        <img src="img/hinhcogaihome3.jpg" alt="hinhcogaihome3">
+        
         <h2 class="center">Shop these outfit collections</h2>
     <p class="center">100% Organic & Fairtrade certified cotton</p>
-        <img src="img/Mystery.jpg" alt="Mystery">
+       
+        <div class="Mystery flex-container justify-content-end">
         <p>Mystery</p>
-        <img src="img/Darling.jpg" alt="Darling">
+       </div>
+        <div class="darling flex-container justify-content-center">
         <p>Darling</p>
+       </div>
         <img src="img/Beyond.jpg" alt="Beyond">
         <p>Beyond</p>
-        <img src="img/Reven.jpg" alt="Reven">
+        <div class="Reven flex-container justify-content-end">
         <p>Reven</p>
-        <img src="img/Lefeminin.jpg" alt="Lefeminin">
+        </div>
+        <div class="Lefeminin flex-container justify-content-end">
         <p>Le Feminin</p>
-        <img src="img/Naturalism.jpg" alt="Naturalism">
+        </div>
+        <div class="Naturalism flex-container justify-content-center">
         <p>Naturalism</p>
+        </div>
         <p>Women’s Clothing and Accessories</p>
         <p>Searching for cute clothes? Shop Nordic Coder women’s <br>
              clothes, accessories and women’s shoes right here. Updated <br>
@@ -125,29 +207,31 @@
               brands. With everything from dresses to <br>
             jeans, ankle boots to sneakers, watches to wallets, our selection of over 20,000 products <br>
                  has something for every style.</p>
-    <section>
-        <img src="img/hinhcogaihome4.jpg" alt="hinhcogaihome4">
-        <img src="img/hinhcogaihome5.jpg" alt="hinhcogaihome5">
-        
-            <p>New customer?</p>
+    <section class="new-customer-section">
+       <div class="new-customer"> 
+        <p>New customer?</p>
         <div class="promo">
+
             <p>Receive instantly voucher valued at</p>
             <p>50&euro;</p>
             <p>and other attractive deals and latest trends</p>
         </div>
         <form>
-        <input type="email" name="email"  placeholder="Email address" >
-        <input type="submit" value="register" class="register-black">
+        <input type="email" name="Email"  placeholder="Email address" >
+        <input type="submit" value="Register" class="register-black">
        </form>
+    </div>
     </section>
     <section>
     <p>Follow us on instagram</p>
     <a href="http://www.instagram.com">@nordiccoder</a>  <br>
+    <div class="flex-container ">
     <img src="img/instagram1.png" alt="instagram1">
     <img src="img/instagram2.png" alt="instagram2">
     <img src="img/instagram3.png" alt="instagram3">
     <img src="img/instagram4.png" alt="instagram4">
     <img src="img/instagram5.png" alt="instagram5">
+   </div>
      </section>
     </main>
     <div class="cookie">
@@ -204,6 +288,7 @@
             <a href="sale">Sale</a>
             <a href="login.html">Login</a>
             <a href="#" class="cart">
+                <!-- dung svg cho hinh vector cho net va nhe  -->
                 <img src="img/art.svg" alt="cart">
                 <p>No item yet</p>
             </a>

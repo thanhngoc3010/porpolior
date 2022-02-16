@@ -33,19 +33,45 @@
     .system li::before{
       content: url(img/dautich.svg);
     } 
-    
+    .thumbnail{
+        opacity: 0.5;
+        width: 0.8;
+        width:80px ;
+    }
+    .thumbnail1 {
+        width: 0.8;
+        width:80px ;
+    }
+    .thumbnail:hover{
+        opacity: 1;
+    }
+
+    .thumnail-active {
+        border: 2px solid #000000;
+        width: 80px;
+    }
+    .flex-container{
+        display: flex;
+    }
+    .flex-direction-column {
+        flex-direction: column;
+    }
    </style>
 
 </head>
 <body>
-    <header>
-        <img src="img/detail.png" alt="detail">
-       <img src="img/detail2.png" alt="detail2">
-       <img src="img/detail3.png" alt="detail3">
-       <img src="img/detail4.jpg" alt="detail4">
-       <img src="img/detail5.jpg" alt="detail5">
-       <img src="img/detail6.jpg" alt="detail6">
-    </header>
+    <div>
+    <div class=" flex-container flex-direction-column">
+        <img src="img/detail.png" alt="detail" class="thumbnail1">
+       <img src="img/detail2.png" alt="detail2" class="thumbnail1" >
+       <img src="img/detail3.png" alt="detail3" class="thumbnail1">
+    </div>
+    <div>
+       <img src="img/detail4.jpg" alt="detail4" >
+       <img src="img/detail5.jpg" alt="detail5" >
+       <img src="img/detail6.jpg" alt="detail6" >
+    </div>
+    </div>
     <nav>
         <a href="new">New</a>
         <a href="shop">Shop</a>
@@ -55,11 +81,13 @@
             <img src="img/art.svg" alt="cart">
         </a>
      </nav>
-     <img src="img/detail.png" alt="detail">
-     <img src="img/detail2.png" alt="detail2">
-     <img src="img/detail3.png" alt="detail3">
-     <img src="img/detail7.png" alt="detail7">
-     <img src="img/detail8.jpg" alt="detail8">
+     <div class="flex-container flex-direction-column">
+     <img src="img/detail.png" alt="detail" class="thumbnail">
+     <img src="img/detail2.png" alt="detail2" class="thumbnail">
+     <img src="img/detail3.png" alt="detail3" class="thumbnail" >
+     <img src="img/detail7.png" alt="detail7" class="thumnail-active">
+    </div>
+    <img src="img/detail8.jpg" alt="detail8">
     <div class="breadcrumb">
         <a href="index.html">Home</a>
         <a href="#">Jackets</a>

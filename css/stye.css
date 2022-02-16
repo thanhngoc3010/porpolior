@@ -12,6 +12,7 @@
 .red-list li::marker{
     color: red;
 }
+/* khi select thi tat ca cac element se co background den,chu do */
 ::selection{
     color:red;
     background:black;
@@ -22,5 +23,8 @@
 }
 *{
     font-family:SVNGilroyMedium  ;
+}
+.border-none {
+    border:none ;
 }
 </style>

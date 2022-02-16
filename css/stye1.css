@@ -2,20 +2,14 @@
 
 
     a{color: black;}
-    h1{font-size: 64px;
- 
-</style>
-<style>
-    .top-menu {
-    background-color: black;
-    text-align: right;
+   .top-menu{
+      background-color: #000000;
+      text-align: right;  
  }
    .top-menu a{
-       color: white;     
-    }
-    }
-    </style>
-    <style>
+       color: white; 
+      }
+   
     .gray {
     color: #828282;
   }
@@ -46,3 +40,59 @@
 body {
   font-size: 100%;
 }
+
+body {
+  font-family: "Poppins";
+}
+.mypolo-border{
+  border-left: 5px solid #EB5757;
+}
+.border-none {
+  border: none;
+ background-color: transparent;
+}
+.border-search {
+  border: none;
+}
+.article {
+  margin:10px;
+}
+.avata-margin {
+  margin-top: 50px;
+}
+.flex-container {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+<style>
+        
+    .h1 {
+     font-size:4em;
+    }
+    .hob::before {
+            content:url(img/daulon.svg); 
+            }
+    .vertical-align-bottom {
+        vertical-align:bottom;
+    }
+    p,ul {
+        line-height: 190%;
+    }
+    .flex-section {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+  
+   .mypolo-border{
+  border-left: 5px solid #EB5757;
+     }
+     table {
+         border-collapse:collapse;
+        }
+     tr {
+    border-bottom-color: 1px solid #E0E0E0;
+   }
+</style>

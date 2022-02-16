@@ -8,48 +8,55 @@
     <title>Document</title>
 
     <link href="fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="css/stye1.css">
+
    
  </head>
 
 <body>
-    
+    <div>
     <nav class="top-menu">
         <a href="contract.html" class="contract">Contract</a>
-        <img src="img/f.svg" alt="facebook">
         <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <img src="img/in.svg" alt="in">
-        <a href="https://linkedin.com/" ><i class="fab fa-linkedin-in"></i></a> 
-        <img src="img/github.svg" alt="github">
+        <a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a> 
+        <!-- dung font awesome cho net va nhe ,doi mau de dang  -->
         <a href="#"><i class="fab fa-github-square"></i></a>
         <a href="#">Share</a>
-    
-    </nav>
-    <div class="hinhcogai">
-        <img src="img/hinhdaidien.png" alt="hinhdaidien">
-        <p><b>My Name</b</p> <br>
-        <a href="mailto:Myemail@gmail.com">Myemail@gmail.com</a><img src="img/hinhsaumail.svg">
     </div>
-
-       
-    <a href="index.html"><img src="img/hinhvali.svg"> My Porfolio</a>
-    <a href="aboutme.html"><img src="img/hinhaboume.svg">About me</a>
-    
+    </nav>
+    <main class="flex-container">
+    <nav>
+    <div class="hinhcogai">
+        <img src="img/hinhdaidien.png" alt="hinhdaidien" class="avata-margin">
+        <p><b>My Name</b</p> <br>
+        <a href="mailto:Myemail@gmail.com">Myemail@gmail.com</a>
+        <button type="button" class="border-none"><i class="fa-solid fa-clone"></i></button>
+        
+    <div>
+        <a href="index.html" class="mypolo-border"><img src="img/hinhvali.svg"> My Porfolio</a> <br>
+        <a href="aboutme.html"><img src="img/hinhaboume.svg">About me</a>
+    </div> 
+</nav>    
+    <section>   
+   <header>
     <h1>My <span style="color: #EB5757">Poforlio</span></h1>
-        <header>
+      
     
             <p>My main focuses are <b>HTML, CSS, JS, React</b></p><br>
          <form >
-        <input type="search" name="search" placeholder="Search">
+        <input type="search" name="search" placeholder="Search" class="border-search">
         <input type="image" src="img/vector.svg" alt="Search" >
-        </form>  <br>
-         </header>
+        </form>  
+    </header>   
+    <section>
       <a class="red" href="#ecommerce">#ecommerce</a>
       <a class="red" href="#technology">#technology</a>  
-      <a class="red" href="#entertainment">#entertainment</a>        
-     <main>   
-         <section>
+      <a class="red" href="#entertainment">#entertainment</a>  
+    </section>        
+         <section >
             <h3 id="#ecommerce">#ecommerce</h3>
+        <nav class="flex-section flex-wrap"  >
             <article>
             <img src="img/NordicCoder.png" alt="NordicCoder">
             <p>NordicCoder</p>
@@ -70,9 +77,11 @@
             <p>Elpis</p>
             <p class="gray"><i>HTMl,CSS,JS,React</i></p>
             </article>
+        </nav>
         </section>
-        <section>
+        <section >
             <h3 id="#technology">#technology</h3>
+            <nav class="flex-section" >
             <article>
             <img src="img/Ceasar.png" alt="Caesar">
             <p>Caesar</p>
@@ -118,11 +127,12 @@
             <p>Ugame</p>
             <p class="gray"><i>HTMl,CSS,JS,React</i></p>
             </article>
-         
-
-            
-            
+        </nav>
+        </section>
+        <section > 
+           
             <h3 id="#entertaiment">#entertainment</h3> 
+        <nav class="flex-section" >
              <article>
             <img src="img/Mignonne.png" alt="Mignonne">
             <p>Mignonne</p>
@@ -138,8 +148,9 @@
             <p>Arcade</p>
             <p class="gray"><i>HTMl,CSS,JS,React</i></p>
             </article>
-          
+        </nav> 
         </section>
+    </section>  
      </main>        
            
                 

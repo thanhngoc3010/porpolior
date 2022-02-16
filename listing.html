@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/stye1.css">
     <style>
        .system li::before{
       content: url(img/dautich.svg);
@@ -12,12 +13,77 @@
     .main-btn {
         background-color:black;
         color: white;}
+    .border-listing {
+      border: 1px solid #E0E0E0;
+      border-radius: 30px;
+      padding: 10px 20px;
+    }
+    .border-radias-s {
+      border-radius:50% ;
+      background-color: transparent;
+    }
+    .Sortbylest-border-radias {
+      border-radius: 30px;
+    }
+    .Sale-border {
+      background: rgba(212, 0, 0, 0.8) ;
+      color:  #FFFFFF;
+    }
+    .color {
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      border: none;
+    }
+    .color:hover {
+      opacity:50%;
+    }
+    .black {
+      background: #000000;
+    }
+    .xam {
+     background: #E0E0E0;
+    }
+    .red {
+    background: #EB5757;
+  }
+    .cam {
+      background: #F2994A;
+    }
+    .vang {
+      background: #F2C94C;
+    }
+    .xanhla{
+      background: #219653;
+    }
+    .xanhduong{
+      background: #2F80ED;
+    }
+    .tim {
+      background: #9B51E0;
+    }
+    .button-size {
+      border: none;
+    }
+    .main-products article{
+      width: 220px;
+    }
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+    .flex-container{
+  display: flex;
+}
+ .justify-content-between {
+   justify-content: space-between;
+ }
     </style>
 </head>
 <body>
   <Header>
         
     <h2>NORDIC CODER</h1>
+  <div >
     <nav>
         <a href="new">New</a>
         <a href="shop">Shop</a>
@@ -25,7 +91,7 @@
         <a href="login.html">Login</a>
         <a href="#" class="cart">
         <img src="img/art.svg" alt="cart">
-       <p>No item yet</p> <br>
+       <p>No item yet</p> </a> <br>
 
     <p>Filter by category</p>
     <p>Tops</p>
@@ -34,60 +100,87 @@
     <p>Jackets</p>
     <p>Shoes</p>
     <p> <span style="color:#828282">Filter by color</span></p>
-    <img src="img/tronden.svg" alt="tronden">
-    <img src="img/tronxam.svg" alt="tronxam">
-    <img src="img/trondo.svg" alt="trondo">
-    <img src="img/troncam.svg" alt="troncam">
-    <img src="img/tronvang.svg" alt="tronvang">
-    <img src="img/tronxanhla.svg" alt="tronxanhla">
-    <img src="img/tronxanhduong.svg" alt="tronxanhduong">
-    <img src="img/trontim.svg" alt="trontim">
+    <button type="button" class="color black"></button>
+    <button type="button" class="color xam"></button>
+    <button type="button" class="color red"></button>
+    <button type="button" class="color cam"></button>
+    <button type="button" class="color vang"></button>
+    <button type="button" class="color xanhla"></button>
+    <button type="button" class="color xanhduong"></button>
+    <button type="button" class="color tim"></button>
+    
     <p>Filter by size</p>
- <button type="button">XS</button>
- <button type="button">S</button>
- <button type="button">M</button>
- <button type="button">L</button>
+ <button type="button" class="button-size">XS</button>
+ <button type="button" class="border-radias-s">S</button>
+ <button type="button" class="button-size">M</button>
+ <button type="button" class="button-size">L</button>
+ </div>
+ <div >
  <h1>Shop</h1>
+ <div class="flex-container justify-content-between">
 <p>Showing 1–12 of 24 results</p>
-
- <select name="cars" id="cars" size="3" multiple>
-     <option value="Sort by latest">Sort by latest</option>
-     <option value="one">One</option>
-     <option value="two">Two</option>
-     <option value="Three">Three</option>
+<form >
+ <select  id="Sort"  name="Sort"  class="border-listing">
+     <option value="Sort by latest" >Sort by latest</option>
+     <option value="Newest to Oldest" >Newest to Oldest</option>
+     <option value="Highest to Lowest" >Highest to Lowest</option>
+     <option value="Lowest to Highest" >Lowest to Highest</option>      
  </select>
- <br>
+</form>
+</div>
+<div class="flex-container flex-wrap main-products">
+<article>
  <img src="img/listing1.jpg" alt="listing1">
  <p>Julia</p>
  <p>€99.00 <span style="color:#828282;text-decoration:line-through;"> €119.00 </span></p>
+</article>
+<article>
  <img src="img/listing2.jpg" alt="listing2">
  <p>Julia</p>
  <p>€99.00 <span style="color:#828282;text-decoration:line-through;"> €119.00 </span></p>
+</article>
+<article>
  <img src="img/listing3.jpg" alt="listing3">
  <p>Julia</p>
  <p>€99.00 <span style="color:#828282;text-decoration:line-through;"> €119.00 </span></p>
+</article>
+<article>
  <img src="img/listing4.jpg" alt="listing4">
  <p>Julia</p>
  <p>€99.00 <span style="color:#828282;text-decoration:line-through;"> €119.00 </span></p>
+</article>
+<article>
  <img src="img/listing5.jpg" alt="listing5">
  <p>Julia</p>
  <p>€99.00 <span style="color:#828282;text-decoration:line-through;"> €119.00 </span></p>
+</article>
+<article>
  <img src="img/listing6.jpg" alt="listing6">
+ <p class="Sale-border">Sale </p>
  <p>Julia</p>
  <p>€99.00 <span style="color:#828282;text-decoration:line-through;"> €119.00 </span></p>
+</article>
+<article>
  <img src="img/listing7.jpg" alt="listing7">
  <p>Julia</p>
  <p>€99.00 <span style="color:#828282;text-decoration:line-through;"> €119.00 </span></p>
+</article>
+<article>
  <img src="img/listing8.jpg" alt="listing8">
  <p>Julia</p>
  <p>€99.00 <span style="color:#828282;text-decoration:line-through;"> €119.00 </span></p>
+</article>
+<article>
  <img src="img/listing9.jpg" alt="listing9">
  <p>Julia</p>
  <p>€99.00 <span style="color:#828282;text-decoration:line-through;"> €119.00 </span></p>
+</article>
+</div>
  <button type="button" onclick= "alert('add to card')">add to cart </button>
  <button type="button">1</button>
  <button type="button">2</button>
   <a href="#"><img src="img/muitendenphai.svg" alt="muitendenphai"></a>
+</div>
  <div class="footer">
     <p> About us </p>
     <ul>
